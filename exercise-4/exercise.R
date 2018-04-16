@@ -2,7 +2,8 @@
 
 # Install the `nycflights13` package. Load (`library()`) the package.
 # You'll also need to load `dplyr`
-
+install.packages("nycflights13")
+library(nycflights13)
 
 # The data frame `flights` should now be accessible to you.
 # Use functions to inspect it: how many rows and columns does it have?

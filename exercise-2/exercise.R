@@ -23,7 +23,7 @@ distinct(makes)
 manu_1997 <- filter(vehicles, year == 1997)
 
 # Arrange the 1997 cars by highway (`hwy`) gas milage
-manu_1997 <- arrange(manu_1997)
+manu_1997 <- arrange(manu_1997, hwy)
 
 # Mutate the 1997 cars data frame to add a column `average` that has the average
 # gas milage (between city and highway mpg) for each car
