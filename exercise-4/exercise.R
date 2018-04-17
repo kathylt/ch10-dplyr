@@ -60,3 +60,8 @@ summary <- flights %>%
             min_time = min(time_diff, na.rm = T),
             max_time = max(time_diff, na.rm = T),
             )
+
+
+flights %>% 
+  group_by(origin) %>% 
+  summarise(avg_delay = mean(dep_delay, na.rm = T))
